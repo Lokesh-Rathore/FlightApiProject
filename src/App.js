@@ -8,8 +8,8 @@ function App() {
   useEffect(() => {
     axios
       .get(
-        // "https://api.flightapi.io/onewaytrip/636a1dc4069374f3da941335/LHR/LAX/2022-12-11/2/0/1/Economy/USD"
-        "https://api.aviationstack.com/v1/flights ? access_key = 9702e1ceb85e3979dec33f6e6f98e503"
+        "https://api.flightapi.io/onewaytrip/636a1dc4069374f3da941335/LHR/LAX/2022-12-11/2/0/1/Economy/USD"
+        // "https://api.aviationstack.com/v1/flights ? access_key = 9702e1ceb85e3979dec33f6e6f98e503"
       )
       .then((res) => {
         setApiData(res.data);
